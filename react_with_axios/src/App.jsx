@@ -14,9 +14,9 @@ function App() {
         <h4> Products </h4>
         <div className = "Both">
          
-        <Categories/> 
+        <Categories setitem={setitem}/> 
            
-        <Products/>
+        <Products item={item}/>
         
         </div>
         </div>

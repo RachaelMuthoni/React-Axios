@@ -15,15 +15,17 @@ const Products = ({ item }) => {
 
         return ( 
         <>
-       
+       {
+           item===""?
         <div className = 'products'> 
         {products ? products.map(product => (<Product product = { product }
         key = { product.id }/>)): "Loading..."}
         </div>
-
+:
         <div className = 'products'> 
         {products ? products.filter(product=>product.category===item).map(product=>(<Product product={product} key={product.id} />)): "Loading..."}
         </div>
+}
 
         </>  
     )

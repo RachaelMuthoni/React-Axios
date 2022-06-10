@@ -4,7 +4,7 @@ import axios from 'axios'
 
 
 const url = "https://fakestoreapi.com/products/categories"
-export const Categories = ({ setitem}) => {
+export const Categories = ({setitem}) => {
     const [categories, setCategories] = useState([])
     
     useEffect(() => {
